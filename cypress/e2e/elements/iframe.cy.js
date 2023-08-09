@@ -5,7 +5,7 @@ describe("Handle js alerts", () => {
         cy.visit("http://www.webdriveruniversity.com")
         cy.get('#iframe').invoke('removeAttr', 'target').click({force:true})
         cy.get("#frame").then((iframe)=>{
-            const iFrame = iframe.contents().find('body')
+            const iFrame = iframe.contents().find("body")
             cy.wrap(iFrame).as("frame")
             cy.get("@frame").find("#button-find-out-more").click()
             cy.get("@frame").find(".modal-body > p")
