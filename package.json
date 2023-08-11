@@ -9,6 +9,7 @@
   "author": "ATT",
   "license": "ISC",
   "dependencies": {
+    "convert-excel-to-json": "^1.7.0",
     "cypress": "^12.17.2"
   }
 }
